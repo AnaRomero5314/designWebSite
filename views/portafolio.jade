@@ -1,0 +1,61 @@
+extends layout
+block content
+	div.navbar
+		div.navbar-inner
+			div.container(style="width: auto")
+				a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.brand(href="/") Diseño Gráfico
+				div.nav-collapse
+					ul.nav	
+						li: a(href="/") Inicio
+						li: a(href="/about") Sobre Nosotros
+						li: a(href="/service") Servicio
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown") Cursos 
+								b.caret
+							ul.dropdown-menu
+								li: a(href="#") Diseño Web
+								li: a(href="#") Diseño Publicitario
+								li: a(href="#") Ilustración
+								li.divider
+								li.nav-header Avanzado
+								li: a(href="#") Branding						
+								li: a(href="#") Fotografía								
+					form.navbar-search.pull-right(action="")
+						input.search-query.span2(type="text", placeholder="Search")
+					ul.nav.pull-right
+						li.active: a(href="/portafolio") Portafolio
+						li: a(href="/contacto") Contacto
+						li.divider-vertical
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown") Blog
+								b.caret
+							ul.dropdown-menu
+								li: a(href="#") Blogger 1
+								li: a(href="#") Blogger 2
+								li.divider
+								li.nav-header Nuevo!
+								li: a(href="#") Blogger 3
+	div.container
+		ul.thumbnails
+			li.span4
+				a.thumbnails(href="#")
+					img(src="/img/1.jpg",alt="")
+				h3 Descripcion
+				p descripcion de la imagen 
+			li.span4
+				a.thumbnails(href="#")
+					img(src="/img/diseño.jpg",alt="")
+				h3 Descripcion
+				p descripcion de la imagen
+			li.span4
+				a.tthumbnails(href="")
+					img(src="/img/di2.jpg",alt="")
+				h3 Descripcion
+				p descripcion de la imagen
+
+
+

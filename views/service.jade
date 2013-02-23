@@ -1,0 +1,57 @@
+extends layout
+block content
+	div.navbar
+		div.navbar-inner
+			div.container(style="width: auto")
+				a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.brand(href="/") Diseño Gráfico
+				div.nav-collapse
+					ul.nav	
+						li: a(href="/") Inicio
+						li: a(href="/about") Sobre Nosotros
+						li.active: a(href="/service") Servicio
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown") Cursos 
+								b.caret
+							ul.dropdown-menu
+								li: a(href="#") Diseño Web
+								li: a(href="#") Diseño Publicitario
+								li: a(href="#") Ilustración
+								li.divider
+								li.nav-header Avanzado
+								li: a(href="#") Branding						
+								li: a(href="#") Fotografía								
+					form.navbar-search.pull-right(action="")
+						input.search-query.span2(type="text", placeholder="Search")
+					ul.nav.pull-right
+						li: a(href="/portafolio") Portafolio
+						li: a(href="/contacto") Contacto
+						li.divider-vertical
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown") Blog
+								b.caret
+							ul.dropdown-menu
+								li: a(href="#") Blogger 1
+								li: a(href="#") Blogger 2
+								li.divider
+								li.nav-header Nuevo!
+								li: a(href="#") Blogger 3
+	
+	div.container
+		div.row
+			div.span3 
+				center: h4 Identidad Visual
+				p La imagen corporativa es la manifestación visible y física de la marca, un conjunto de piezas que ayudan a que una marca o empresa se constituya como tal y tome fuerza en el mercado. 
+			div.span3
+				center: h4 Diseño Publicitario
+				p Son muchos los elementos que tenemos en cuenta a la hora de plantear cualquier trabajo de diseño gráfico. Tipografía, color, fotografía, ilustración... un trabajo lleno de creatividad para dar forma a mensajes y comunicados de cualquier tipo.
+			div.span3
+				center: h4 Diseño Web
+				p Un diseño trabajado es un factor importante en el éxito de un sitio web. Te indicamos los detalles que marcarán esa diferencia respecto a otras webs de la competencia. 
+			div.span3
+				center: h4 Cursos Online
+				p Si estás interesado en adquirir conocimientos sobre diseño gráfico, tenemos cursos en línea desde niveles básicos hasta profesionales.
+	
